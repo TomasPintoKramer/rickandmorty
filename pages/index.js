@@ -125,7 +125,7 @@ export default function Home({
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   try {
     const startTime =  new Date().getTime();
     const [reqList, reqEpisode, reqCharacter, reqLocation] = await Promise.all([
